@@ -1,10 +1,10 @@
-#tweetBox-title{
+#TweetGrej-title{
 	font-weight: bold;
 	text-align: center;
 	font-size: 24px;
 }
 
-#tweetBox-count{
+#TweetGrej-count{
 	font-weight: bold;
 	text-align: right;
 	font-size: 24px;
@@ -15,7 +15,7 @@
 
 
 
-#tweetBox-blog{
+#TweetGrej-blog{
 	display: block;
 	z-index: 9999;
 	position: fixed;
@@ -26,7 +26,7 @@
 	margin-top: -15em;
 }
 
-#tweetBox-input{
+#TweetGrej-input{
 	font-family: helvetica,arial;
 	width: 20em;
 	padding: 1em;
@@ -37,15 +37,15 @@
 	  resize: none;
 }
 
-#tweetBox-input:focus{
+#TweetGrej-input:focus{
 	border: solid 2px #000
 }
 
-#tweetBox-blog h1{
+#TweetGrej-blog h1{
 	text-align: center;
 }
 
-#tweetBox-overlay{
+#TweetGrej-overlay{
 	position: fixed;
 	top: 0;
 	left: 0;
