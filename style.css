@@ -1,0 +1,56 @@
+#tweetBox-title{
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+}
+
+#tweetBox-count{
+	font-weight: bold;
+	text-align: right;
+	font-size: 24px;
+	width: 15em;
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+#tweetBox-blog{
+	display: block;
+	z-index: 9999;
+	position: fixed;
+	margin: auto;
+	top: 50%;
+	left: 0;
+	right:0;
+	margin-top: -15em;
+}
+
+#tweetBox-input{
+	font-family: helvetica,arial;
+	width: 20em;
+	padding: 1em;
+	height: 10em;
+	font-size: 16px;
+	margin:auto;
+	display: block;
+	  resize: none;
+}
+
+#tweetBox-input:focus{
+	border: solid 2px #000
+}
+
+#tweetBox-blog h1{
+	text-align: center;
+}
+
+#tweetBox-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9998;
+	background: rgba(255,255,255,0.95);
+}
