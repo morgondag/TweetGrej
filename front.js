@@ -3,9 +3,11 @@ var max = 140;
 var count = 0;
 
 $(document).on("keypress", function(e) {
+
 	if (e.ctrlKey && e.charCode == 2 && !open) {
 		Add();
 	}
+
 
 	if (open && e.keyCode != 27 || open && e.keyCode != 13) {
 		if (count < max) {
@@ -37,6 +39,7 @@ function Add() {
 	$("body").prepend('<div id="TweetGrej-blog"><div id="TweetGrej-title">TweetGrej</div><textarea type="text" placeholder="Message.." id="TweetGrej-input" /><div id="TweetGrej-count"></div></div>');
 	$("body").prepend('<div id="TweetGrej-overlay"></div>');
 	$('#TweetGrej-input').focus();
+	$('#TweetGrej-input').val(document.URL +' ');
 	$('#TweetGrej-blog').on('focusout', function() {
 		Remove();
 	});
@@ -50,6 +53,18 @@ function Remove() {
 }
 
 function Save() {
-	console.log('save');
-	Remove();
+	var data = {
+		msg : JSON.stringify( $('#TweetGrej-input').val())
+
+	}
+	var serverURL = 'ENTER YOUR SERVER HERE!'
+
+	$.post(serverURL, data , function(e){
+		console.log(e);
+	}).always(function(e) { 
+		Remove(); 
+	});
+
+
+	
 }
